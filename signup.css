@@ -1,0 +1,181 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+    border: none;
+    /* background: none; */
+    outline: none;
+}
+
+.profile-container
+{
+    background-color: #e8e7e7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 15px;
+}
+
+.input-name
+{
+    margin-top: 35px;
+}
+.input-name>label
+{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(48, 170, 129);
+    
+}
+
+.typing-box
+{
+    margin-top: 20px;
+
+}
+
+.typing-box>input
+{
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 25px;
+
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove spinner arrows in Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.submit-btn
+{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn>button
+{
+    border-style: none;
+    background-color: rgb(11, 112, 79);
+    color: #fff;
+    padding: 10px 15px;
+    width: 200px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.submit-btn>button:hover
+{
+    background-color: rgb(62, 218, 166);
+}
+
+.profile-title
+{
+    text-align: center;
+    color: rgb(15, 184, 128);
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+/* Custom file upload button style */
+.custom-file-upload {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.custom-file-upload:hover {
+    background-color: #45a049;
+}
+
+/* Style for the text inside the button */
+.custom-file-upload span {
+    display: inline-block;
+}
+
+/* Optional: Add a small icon (optional) */
+.custom-file-upload::before {
+    content: "\f093"; /* FontAwesome icon for file */
+    font-family: "FontAwesome";
+    padding-right: 10px;
+}
+
+/* Optional: Style the input box's file name text after selecting a file */
+.typing-box input[type="file"] {
+    display: none;
+}
+
+@media screen and (min-width:992px){
+    body
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #e8e7e7;
+    }
+
+    .profile-container
+    {
+        width: 80%;
+    }
+    .input-name
+    {
+        text-align: center;
+    }
+
+    .typing-box
+    {
+        width: 50%;
+    }
+    .input-box
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .typing-box
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .custom-file-upload
+    {
+        width: 80%;
+        text-align: center;
+        
+    }
+    .submit-btn
+    {
+        width: 100%;
+    }
+
+    .submit-btn>button
+    {
+        width: 35%;
+    }
+
+
+
+}
