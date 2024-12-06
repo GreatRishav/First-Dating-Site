@@ -32,6 +32,7 @@ img {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    height: 95%;
 }
 
 .profile
